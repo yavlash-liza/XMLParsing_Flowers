@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns:ns ="http://www.company.com/flowers"
+         xsi:schemaLocation = "http://www.company.com/flowers flowers.xsd">
+    <flowers>
+        <wild-flower>
+            <flower-index>902542</flower-index>
+            <name>Azalea</name>
+            <soil>Peaty</soil>
+            <origin>South Asia</origin>
+            <visual-parameters>
+                <leaf-color>Green</leaf-color>
+                <leaves-form>Lobed</leaves-form>
+                <petal-color>Red</petal-color>
+                <root>Fibrous</root>
+                <average-height>20</average-height>
+            </visual-parameters>
+            <growing-tips>
+                <temperature>12</temperature>
+                <light>Penumbra</light>
+                <irrigation>150</irrigation>
+            </growing-tips>
+            <multiplying>Cuttings</multiplying>
+            <price>5.7</price>
+            <planting-date>2016-01-15</planting-date>
+        </wild-flower>
+
+        <aquatic-flower>
+            <flower-index>456789</flower-index>
+            <name>Lotus</name>
+            <soil>Water</soil>
+            <origin>South Asia</origin>
+            <visual-parameters>
+                <leaf-color>Green</leaf-color>
+                <leaves-form>Entire</leaves-form>
+                <petal-color>Rose</petal-color>
+                <root>Fibrous</root>
+                <average-height>30</average-height>
+            </visual-parameters>
+            <growing-tips>
+                <temperature>10</temperature>
+                <light>Sun</light>
+                <irrigation>1000</irrigation>
+            </growing-tips>
+            <multiplying>Seeds</multiplying>
+            <price>5.7</price>
+            <planting-date>2020-01-01</planting-date>
+        </aquatic-flower>
+    </flowers>
+</project>
