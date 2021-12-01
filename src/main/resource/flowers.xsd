@@ -26,7 +26,6 @@
             <element name="visual-parameters" type="tns:VisualParameters"/>
             <element name="growing-tips" type="tns:GrowingTips"/>
             <element name="multiplying" type="tns:Multiplying"/>
-            <element name="price" type="positiveInteger"/>
             <element name="planting-date" type="gYear"/>
         </sequence>
         <attribute name="id" use="required" type="tns:IndexID"/>
@@ -42,8 +41,6 @@
                             <restriction base="string">
                                 <enumeration value="River"/>
                                 <enumeration value="Lake"/>
-                                <enumeration value="Ocean"/>
-                                <enumeration value="Aquarium"/>
                             </restriction>
                         </simpleType>
                     </element>
@@ -60,7 +57,6 @@
                         <simpleType>
                             <restriction base="string">
                                 <enumeration value="Forest"/>
-                                <enumeration value="Meadow"/>
                                 <enumeration value="Field"/>
                                 <enumeration value="Mountain"/>
                             </restriction>
@@ -90,9 +86,7 @@
 
     <complexType name="VisualParameters">
         <sequence>
-            <element name="leaf-color" type="positiveInteger"/>
             <element name="leaves-form" type="tns:LeavesForm"/>
-            <element name="petal-color" type="string"/>
             <element name="root" type="tns:Root"/>
             <element name="average-height" type="positiveInteger"/>
         </sequence>
@@ -102,20 +96,12 @@
         <sequence>
             <element name="temperature" type="positiveInteger"/>
             <element name="light" type="tns:Light"/>
-            <element name="irrigation">
-                <simpleType>
-                    <restriction base="positiveInteger">
-                        <minLength value="0"/>
-                        <maxLength value="1000000"/>
-                    </restriction>
-                </simpleType>
-            </element>
         </sequence>
     </complexType>
 
     <simpleType name="IndexID">
         <restriction base="ID">
-            <pattern value="\d{6}"/>
+            <pattern value="i\d{6}"/>
         </restriction>
     </simpleType>
 
@@ -123,8 +109,6 @@
         <restriction base="string">
             <enumeration value="Peaty"/>
             <enumeration value="Sandy"/>
-            <enumeration value="Clay"/>
-            <enumeration value="Silty"/>
             <enumeration value="Loamy"/>
         </restriction>
     </simpleType>
@@ -132,8 +116,6 @@
     <simpleType name="LeavesForm">
         <restriction base="string">
             <enumeration value="Lobed"/>
-            <enumeration value="ClusterNeedles"/>
-            <enumeration value="SingleNeedles"/>
             <enumeration value="Toothed"/>
             <enumeration value="Entire"/>
         </restriction>
@@ -158,7 +140,6 @@
     <simpleType name="Light">
         <restriction base="string">
             <enumeration value="Sun"/>
-            <enumeration value="Penumbra"/>
             <enumeration value="Shadow"/>
         </restriction>
     </simpleType>

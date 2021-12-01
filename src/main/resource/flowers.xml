@@ -3,48 +3,292 @@
          xmlns:ns ="http://www.company.com/flowers"
          xsi:schemaLocation = "http://www.company.com/flowers flowers.xsd">
     <flowers>
-        <wild-flower>
-            <flower-index>902542</flower-index>
+        <garden-flower name="i902542">
             <name>Azalea</name>
             <soil>Peaty</soil>
             <origin>South Asia</origin>
             <visual-parameters>
-                <leaf-color>Green</leaf-color>
                 <leaves-form>Lobed</leaves-form>
-                <petal-color>Red</petal-color>
                 <root>Fibrous</root>
                 <average-height>20</average-height>
             </visual-parameters>
             <growing-tips>
                 <temperature>12</temperature>
-                <light>Penumbra</light>
-                <irrigation>150</irrigation>
+                <light>Shadow</light>
             </growing-tips>
             <multiplying>Cuttings</multiplying>
-            <price>5.7</price>
             <planting-date>2016-01-15</planting-date>
-        </wild-flower>
+            <flower-age>Annual</flower-age>
+        </garden-flower>
 
-        <aquatic-flower>
-            <flower-index>456789</flower-index>
+        <garden-flower name="i976764">
+            <name>Lilium</name>
+            <soil>Peaty</soil>
+            <origin>Asia</origin>
+            <visual-parameters>
+                <leaves-form>Entire</leaves-form>
+                <root>Superficial</root>
+                <average-height>150</average-height>
+            </visual-parameters>
+            <growing-tips>
+                <temperature>18</temperature>
+                <light>Sun</light>
+            </growing-tips>
+            <multiplying>Seeds</multiplying>
+            <planting-date>2020-10-10</planting-date>
+            <flower-age>Perennial</flower-age>
+        </garden-flower>
+
+        <garden-flower name="i028572">
+            <name>Verbena</name>
+            <soil>Peaty</soil>
+            <origin>America</origin>
+            <visual-parameters>
+                <leaves-form>Entire</leaves-form>
+                <root>Pivotal</root>
+                <average-height>18</average-height>
+            </visual-parameters>
+            <growing-tips>
+                <temperature>14</temperature>
+                <light>Sun</light>
+            </growing-tips>
+            <multiplying>Seeds</multiplying>
+            <planting-date>2021-05-10</planting-date>
+            <flower-age>Perennial</flower-age>
+        </garden-flower>
+
+        <garden-flower name="i875874">
+            <name>Rose</name>
+            <soil>Loamy</soil>
+            <origin>Europe</origin>
+            <visual-parameters>
+                <leaves-form>Entire</leaves-form>
+                <root>Pivotal</root>
+                <average-height>50</average-height>
+            </visual-parameters>
+            <growing-tips>
+                <temperature>13</temperature>
+                <light>Sun</light>
+            </growing-tips>
+            <multiplying>Cuttings</multiplying>
+            <planting-date>2020-06-04</planting-date>
+            <flower-age>Annual</flower-age>
+        </garden-flower>
+
+        <garden-flower name="i910465">
+            <name>Ranunculus</name>
+            <soil>Peaty</soil>
+            <origin>Europe</origin>
+            <visual-parameters>
+                <leaves-form>Toothed</leaves-form>
+                <root>Fibrous</root>
+                <average-height>30</average-height>
+            </visual-parameters>
+            <growing-tips>
+                <temperature>16</temperature>
+                <light>Sun</light>
+            </growing-tips>
+            <multiplying>Cuttings</multiplying>
+            <planting-date>2020-06-19</planting-date>
+            <flower-age>Annual</flower-age>
+        </garden-flower>
+
+        <garden-flower name="i377694">
+            <name>Hyacinthus</name>
+            <soil>Peaty</soil>
+            <origin>Europe</origin>
+            <visual-parameters>
+                <leaves-form>Lobed</leaves-form>
+                <root>Fibrous</root>
+                <average-height>37</average-height>
+            </visual-parameters>
+            <growing-tips>
+                <temperature>14</temperature>
+                <light>Sun</light>
+            </growing-tips>
+            <multiplying>Leaves</multiplying>
+            <planting-date>2020-04-19</planting-date>
+            <flower-age>Annual</flower-age>
+        </garden-flower>
+
+        <aquatic-flower name="i456789">
             <name>Lotus</name>
             <soil>Water</soil>
             <origin>South Asia</origin>
             <visual-parameters>
-                <leaf-color>Green</leaf-color>
                 <leaves-form>Entire</leaves-form>
-                <petal-color>Rose</petal-color>
                 <root>Fibrous</root>
                 <average-height>30</average-height>
             </visual-parameters>
             <growing-tips>
                 <temperature>10</temperature>
                 <light>Sun</light>
-                <irrigation>1000</irrigation>
             </growing-tips>
             <multiplying>Seeds</multiplying>
-            <price>5.7</price>
             <planting-date>2020-01-01</planting-date>
+            <water-type>River</water-type>
         </aquatic-flower>
+
+        <aquatic-flower name="i075217">
+            <name>Eichhornia</name>
+            <soil>Water</soil>
+            <origin>South America</origin>
+            <visual-parameters>
+                <leaves-form>Lobed</leaves-form>
+                <root>Superficial</root>
+                <average-height>29</average-height>
+            </visual-parameters>
+            <growing-tips>
+                <temperature>9</temperature>
+                <light>Sun</light>
+            </growing-tips>
+            <multiplying>Leaves</multiplying>
+            <planting-date>2020-05-09</planting-date>
+            <water-type>Lake</water-type>
+        </aquatic-flower>
+
+        <aquatic-flower name="i877426">
+            <name>Nymphoides</name>
+            <soil>Water</soil>
+            <origin>South America</origin>
+            <visual-parameters>
+                <leaves-form>Entire</leaves-form>
+                <root>Superficial</root>
+                <average-height>9</average-height>
+            </visual-parameters>
+            <growing-tips>
+                <temperature>14</temperature>
+                <light>Sun</light>
+            </growing-tips>
+            <multiplying>Leaves</multiplying>
+            <planting-date>2016-06-09</planting-date>
+            <water-type>River</water-type>
+        </aquatic-flower>
+
+        <aquatic-flower name="i436527">
+            <name>Nymphaeaceae</name>
+            <soil>Water</soil>
+            <origin>Asia</origin>
+            <visual-parameters>
+                <leaves-form>Entire</leaves-form>
+                <root>Fibrous</root>
+                <average-height>20</average-height>
+            </visual-parameters>
+            <growing-tips>
+                <temperature>11</temperature>
+                <light>Sun</light>
+            </growing-tips>
+            <multiplying>Cuttings</multiplying>
+            <planting-date>2019-06-09</planting-date>
+            <water-type>River</water-type>
+        </aquatic-flower>
+
+        <aquatic-flower name="i975268">
+            <name>Nelumbo</name>
+            <soil>Water</soil>
+            <origin>Asia</origin>
+            <visual-parameters>
+                <leaves-form>Entire</leaves-form>
+                <root>Fibrous</root>
+                <average-height>23</average-height>
+            </visual-parameters>
+            <growing-tips>
+                <temperature>14</temperature>
+                <light>Sun</light>
+            </growing-tips>
+            <multiplying>Cuttings</multiplying>
+            <planting-date>2017-09-19</planting-date>
+            <water-type>Lake</water-type>
+        </aquatic-flower>
+
+        <wild-flower name="i879055">
+            <name>Erythronium</name>
+            <soil>Sandy</soil>
+            <origin>Europe</origin>
+            <visual-parameters>
+                <leaves-form>Entire</leaves-form>
+                <root>Fibrous</root>
+                <average-height>10</average-height>
+            </visual-parameters>
+            <growing-tips>
+                <temperature>15</temperature>
+                <light>Sun</light>
+            </growing-tips>
+            <multiplying>Seeds</multiplying>
+            <planting-date>2018-07-10</planting-date>
+            <origin-type>Field</origin-type>
+        </wild-flower>
+
+        <wild-flower name="i094756">
+            <name>Achillea millefolium</name>
+            <soil>Sandy</soil>
+            <origin>Europe</origin>
+            <visual-parameters>
+                <leaves-form>Toothed</leaves-form>
+                <root>Fibrous</root>
+                <average-height>15</average-height>
+            </visual-parameters>
+            <growing-tips>
+                <temperature>10</temperature>
+                <light>Sun</light>
+            </growing-tips>
+            <multiplying>Cuttings</multiplying>
+            <planting-date>2018-09-15</planting-date>
+            <origin-type>Field</origin-type>
+        </wild-flower>
+
+        <wild-flower name="i750345">
+            <name>Hypericum</name>
+            <soil>Loamy</soil>
+            <origin>Europe</origin>
+            <visual-parameters>
+                <leaves-form>Toothed</leaves-form>
+                <root>Superficial</root>
+                <average-height>80</average-height>
+            </visual-parameters>
+            <growing-tips>
+                <temperature>17</temperature>
+                <light>Sun</light>
+            </growing-tips>
+            <multiplying>Cuttings</multiplying>
+            <planting-date>2019-06-20</planting-date>
+            <origin-type>Mountain</origin-type>
+        </wild-flower>
+
+        <wild-flower name="i897656">
+            <name>Melilotus</name>
+            <soil>Peaty</soil>
+            <origin>Europe</origin>
+            <visual-parameters>
+                <leaves-form>Entire</leaves-form>
+                <root>Superficial</root>
+                <average-height>150</average-height>
+            </visual-parameters>
+            <growing-tips>
+                <temperature>15</temperature>
+                <light>Sun</light>
+            </growing-tips>
+            <multiplying>Cuttings</multiplying>
+            <planting-date>2019-07-20</planting-date>
+            <origin-type>Forest</origin-type>
+        </wild-flower>
+
+        <wild-flower name="i137388">
+            <name>Digitalis purpurea</name>
+            <soil>Loamy</soil>
+            <origin>North America</origin>
+            <visual-parameters>
+                <leaves-form>Lobed</leaves-form>
+                <root>Fibrous</root>
+                <average-height>34</average-height>
+            </visual-parameters>
+            <growing-tips>
+                <temperature>16</temperature>
+                <light>Sun</light>
+            </growing-tips>
+            <multiplying>Seeds</multiplying>
+            <planting-date>2019-07-21</planting-date>
+            <origin-type>Forest</origin-type>
+        </wild-flower>
     </flowers>
 </project>
