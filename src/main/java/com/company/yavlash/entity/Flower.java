@@ -6,35 +6,39 @@ import com.company.yavlash.entity.enums.SoilType;
 import java.time.LocalDate;
 
 public abstract class Flower {
-    private String name;
+    private String flowerName;
     private SoilType soilType;
     private String origin;
     private VisualParameters visualParameters;
     private GrowingTips growingTips;
     private Multiplying multiplying;
     private LocalDate plantingDate;
-    private String id;
+    private String flowerId;
+    private String flowerInfo;
 
     public Flower() {
+        visualParameters = new VisualParameters();
+        growingTips = new GrowingTips();
     }
 
-    public Flower(String name, SoilType soilType, String origin, VisualParameters visualParameters, GrowingTips growingTips, Multiplying multiplying, LocalDate plantingDate, String id) {
-        this.name = name;
+    public Flower(String flowerName, SoilType soilType, String origin, VisualParameters visualParameters, GrowingTips growingTips, Multiplying multiplying, LocalDate plantingDate, String flowerId, String flowerInfo) {
+        this.flowerName = flowerName;
         this.soilType = soilType;
         this.origin = origin;
         this.visualParameters = visualParameters;
         this.growingTips = growingTips;
         this.multiplying = multiplying;
         this.plantingDate = plantingDate;
-        this.id = id;
+        this.flowerId = flowerId;
+        this.flowerInfo = flowerInfo;
     }
 
-    public String getName() {
-        return name;
+    public String getFlowerName() {
+        return flowerName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setFlowerName(String flowerName) {
+        this.flowerName = flowerName;
     }
 
     public SoilType getSoilType() {
@@ -85,12 +89,20 @@ public abstract class Flower {
         this.plantingDate = plantingDate;
     }
 
-    public String getId() {
-        return id;
+    public String getFlowerId() {
+        return flowerId;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setFlowerId(String flowerId) {
+        this.flowerId = flowerId;
+    }
+
+    public String getFlowerInfo() {
+        return flowerInfo;
+    }
+
+    public void setFlowerInfo(String flowerId) {
+        this.flowerInfo = flowerInfo;
     }
 
     @Override
@@ -99,9 +111,9 @@ public abstract class Flower {
         if (object == null || getClass() != object.getClass()) {return false;}
         Flower aThat = (Flower) object;
 
-        if(getName() == null) {
-            if(aThat.getName() != null){return false;}
-        } else if(!getName().equals(aThat.getName())){return false;}
+        if(getFlowerName() == null) {
+            if(aThat.getFlowerName() != null){return false;}
+        } else if(!getFlowerName().equals(aThat.getFlowerName())){return false;}
 
         if(getSoilType() == null) {
             if(aThat.getSoilType() != null){return false;}
@@ -127,23 +139,28 @@ public abstract class Flower {
             if(aThat.getPlantingDate() != null){return false;}
         } else if(!getPlantingDate().equals(aThat.getPlantingDate())){return false;}
 
-        if(getId() == null) {
-            return aThat.getId() == null;
-        } else return getId().equals(aThat.getId());
+        if(getFlowerInfo() == null) {
+            if(aThat.getFlowerInfo() != null){return false;}
+        } else if(!getFlowerInfo().equals(aThat.getFlowerInfo())){return false;}
+
+        if(getFlowerId() == null) {
+            return aThat.getFlowerId() == null;
+        } else return getFlowerId().equals(aThat.getFlowerId());
     }
 
     @Override
     public int hashCode() {
         final int prime = 31;
         int result = 1;
-        result = prime * result + (getName() == null ? 0 : getName().hashCode());
+        result = prime * result + (getFlowerName() == null ? 0 : getFlowerName().hashCode());
         result = prime * result + (getSoilType() == null ? 0 : getSoilType().hashCode());
         result = prime * result + (getOrigin() == null ? 0 : getOrigin().hashCode());
         result = prime * result + (getVisualParameters() == null ? 0 : getVisualParameters().hashCode());
         result = prime * result + (getGrowingTips() == null ? 0 : getGrowingTips().hashCode());
         result = prime * result + (getMultiplying() == null ? 0 : getMultiplying().hashCode());
         result = prime * result + (getPlantingDate() == null ? 0 : getPlantingDate().hashCode());
-        result = prime * result + (getId() == null ? 0 : getId().hashCode());
+        result = prime * result + (getFlowerId() == null ? 0 : getFlowerId().hashCode());
+        result = prime * result + (getFlowerInfo() == null ? 0 : getFlowerInfo().hashCode());
         return result;
     }
 }

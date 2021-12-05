@@ -1,35 +1,32 @@
 package com.company.yavlash.entity;
 
-import com.company.yavlash.entity.enums.LeavesForm;
-import com.company.yavlash.entity.enums.Root;
-
 public class VisualParameters {
-    private LeavesForm leavesForm;
-    private Root root;
+    private String leavesForm;
+    private String root;
     private int averageHeight;
 
     public VisualParameters() {
     }
 
-    public VisualParameters(LeavesForm leavesForm, Root root, int averageHeight) {
+    public VisualParameters(String leavesForm, String root, int averageHeight) {
         this.leavesForm = leavesForm;
         this.root = root;
         this.averageHeight = averageHeight;
     }
 
-    public LeavesForm getLeavesForm() {
+    public String getLeavesForm() {
         return leavesForm;
     }
 
-    public void setLeavesForm(LeavesForm leavesForm) {
+    public void setLeavesForm(String leavesForm) {
         this.leavesForm = leavesForm;
     }
 
-    public Root getRoot() {
+    public String getRoot() {
         return root;
     }
 
-    public void setRoot(Root root) {
+    public void setRoot(String root) {
         this.root = root;
     }
 

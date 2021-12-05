@@ -1,15 +1,13 @@
 package com.company.yavlash.entity;
 
-import com.company.yavlash.entity.enums.Light;
-
 public class GrowingTips {
     private int temperature;
-    private Light light;
+    private String light;
 
     public GrowingTips() {
     }
 
-    public GrowingTips(int temperature, Light light) {
+    public GrowingTips(int temperature, String light) {
         this.temperature = temperature;
         this.light = light;
     }
@@ -22,11 +20,11 @@ public class GrowingTips {
         this.temperature = temperature;
     }
 
-    public Light getLight() {
+    public String getLight() {
         return light;
     }
 
-    public void setLight(Light light) {
+    public void setLight(String light) {
         this.light = light;
     }
 

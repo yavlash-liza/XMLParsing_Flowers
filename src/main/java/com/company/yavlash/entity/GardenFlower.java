@@ -2,18 +2,19 @@ package com.company.yavlash.entity;
 
 import com.company.yavlash.entity.enums.FlowerAge;
 import com.company.yavlash.entity.enums.Multiplying;
+import com.company.yavlash.entity.enums.OriginType;
 import com.company.yavlash.entity.enums.SoilType;
 
 import java.time.LocalDate;
 
-public class GardenFlower extends Flower{
+public class GardenFlower extends Flower {
     private FlowerAge flowerAge;
 
     public GardenFlower() {
     }
 
-    public GardenFlower(String name, SoilType soilType, String origin, VisualParameters visualParameters, GrowingTips growingTips, Multiplying multiplying, LocalDate plantingDate, String id, FlowerAge flowerAge) {
-        super(name, soilType, origin, visualParameters, growingTips, multiplying, plantingDate, id);
+    public GardenFlower(String flowerName, SoilType soilType, String origin, VisualParameters visualParameters, GrowingTips growingTips, Multiplying multiplying, LocalDate plantingDate, String flowerId, String flowerInfo, OriginType originType) {
+        super(flowerName, soilType, origin, visualParameters, growingTips, multiplying, plantingDate, flowerId, flowerInfo);
         this.flowerAge = flowerAge;
     }
 
@@ -48,14 +49,15 @@ public class GardenFlower extends Flower{
     public String toString() {
         return new StringBuilder(getClass().getSimpleName())
                 .append("{")
-                .append("name=").append(getName())
+                .append("flowerName=").append(getFlowerName())
                 .append(", soilType=").append(getSoilType())
                 .append(", origin=").append(getOrigin())
                 .append(", visualParameters=").append(getVisualParameters())
                 .append(", growingTips=").append(getGrowingTips())
                 .append(", multiplying=").append(getMultiplying())
                 .append(", plantingDate=").append(getPlantingDate())
-                .append(", id=").append(getId())
+                .append(", flowerId=").append(getFlowerId())
+                .append(", flowerInfo=").append(getFlowerInfo())
                 .append(", flowerAge=").append(getFlowerAge())
                 .append("}")
                 .toString();
