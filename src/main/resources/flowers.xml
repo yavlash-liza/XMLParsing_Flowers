@@ -3,8 +3,8 @@
          xmlns:ns ="http://www.company.com/flowers"
          xsi:schemaLocation = "http://www.company.com/flowers flowers.xsd">
     <flowers>
-        <garden-flower name="i902542">
-            <name>Azalea</name>
+        <garden-flower flower-id="i902542" flower-info="розовый цветок">
+            <flower-name>Azalea</flower-name>
             <soil>Peaty</soil>
             <origin>South Asia</origin>
             <visual-parameters>
@@ -21,8 +21,8 @@
             <flower-age>Annual</flower-age>
         </garden-flower>
 
-        <garden-flower name="i976764">
-            <name>Lilium</name>
+        <garden-flower flower-id="i976764" flower-info="белый цветок">
+            <flower-name>Lilium</flower-name>
             <soil>Peaty</soil>
             <origin>Asia</origin>
             <visual-parameters>
@@ -39,8 +39,8 @@
             <flower-age>Perennial</flower-age>
         </garden-flower>
 
-        <garden-flower name="i028572">
-            <name>Verbena</name>
+        <garden-flower flower-id="i028572" flower-info="сиреневый цветок">
+            <flower-name>Verbena</flower-name>
             <soil>Peaty</soil>
             <origin>America</origin>
             <visual-parameters>
@@ -57,8 +57,8 @@
             <flower-age>Perennial</flower-age>
         </garden-flower>
 
-        <garden-flower name="i875874">
-            <name>Rose</name>
+        <garden-flower flower-id="i875874" flower-info="желтый цветок">
+            <flower-name>Rose</flower-name>
             <soil>Loamy</soil>
             <origin>Europe</origin>
             <visual-parameters>
@@ -75,8 +75,8 @@
             <flower-age>Annual</flower-age>
         </garden-flower>
 
-        <garden-flower name="i910465">
-            <name>Ranunculus</name>
+        <garden-flower flower-id="i910465" flower-info="синий цветок">
+            <flower-name>Ranunculus</flower-name>
             <soil>Peaty</soil>
             <origin>Europe</origin>
             <visual-parameters>
@@ -93,8 +93,8 @@
             <flower-age>Annual</flower-age>
         </garden-flower>
 
-        <garden-flower name="i377694">
-            <name>Hyacinthus</name>
+        <garden-flower flower-id="i377694" flower-info="оранжевый цветок">
+            <flower-name>Hyacinthus</flower-name>
             <soil>Peaty</soil>
             <origin>Europe</origin>
             <visual-parameters>
@@ -111,8 +111,8 @@
             <flower-age>Annual</flower-age>
         </garden-flower>
 
-        <aquatic-flower name="i456789">
-            <name>Lotus</name>
+        <aquatic-flower flower-id="i456789" flower-info="розовый цветок">
+            <flower-name>Lotus</flower-name>
             <soil>Water</soil>
             <origin>South Asia</origin>
             <visual-parameters>
@@ -129,8 +129,8 @@
             <water-type>River</water-type>
         </aquatic-flower>
 
-        <aquatic-flower name="i075217">
-            <name>Eichhornia</name>
+        <aquatic-flower flower-id="i075217" flower-info="голубой цветок">
+            <flower-name>Eichhornia</flower-name>
             <soil>Water</soil>
             <origin>South America</origin>
             <visual-parameters>
@@ -147,8 +147,8 @@
             <water-type>Lake</water-type>
         </aquatic-flower>
 
-        <aquatic-flower name="i877426">
-            <name>Nymphoides</name>
+        <aquatic-flower flower-id="i877426" flower-info="белый цветок">
+            <flower-name>Nymphoides</flower-name>
             <soil>Water</soil>
             <origin>South America</origin>
             <visual-parameters>
@@ -165,8 +165,8 @@
             <water-type>River</water-type>
         </aquatic-flower>
 
-        <aquatic-flower name="i436527">
-            <name>Nymphaeaceae</name>
+        <aquatic-flower flower-id="i436527" flower-info="черный цветок">
+            <flower-name>Nymphaeaceae</flower-name>
             <soil>Water</soil>
             <origin>Asia</origin>
             <visual-parameters>
@@ -183,8 +183,8 @@
             <water-type>River</water-type>
         </aquatic-flower>
 
-        <aquatic-flower name="i975268">
-            <name>Nelumbo</name>
+        <aquatic-flower flower-id="i975268" flower-info="бордовый цветок">
+            <flower-name>Nelumbo</flower-name>
             <soil>Water</soil>
             <origin>Asia</origin>
             <visual-parameters>
@@ -201,8 +201,8 @@
             <water-type>Lake</water-type>
         </aquatic-flower>
 
-        <wild-flower name="i879055">
-            <name>Erythronium</name>
+        <wild-flower flower-id="i879055" flower-info="розовый цветок">
+            <flower-name>Erythronium</flower-name>
             <soil>Sandy</soil>
             <origin>Europe</origin>
             <visual-parameters>
@@ -219,8 +219,8 @@
             <origin-type>Field</origin-type>
         </wild-flower>
 
-        <wild-flower name="i094756">
-            <name>Achillea millefolium</name>
+        <wild-flower flower-id="i094756" flower-info="оранжевый цветок">
+            <flower-name>Achillea millefolium</flower-name>
             <soil>Sandy</soil>
             <origin>Europe</origin>
             <visual-parameters>
@@ -237,8 +237,8 @@
             <origin-type>Field</origin-type>
         </wild-flower>
 
-        <wild-flower name="i750345">
-            <name>Hypericum</name>
+        <wild-flower flower-id="i750345" flower-info="красный цветок">
+            <flower-name>Hypericum</flower-name>
             <soil>Loamy</soil>
             <origin>Europe</origin>
             <visual-parameters>
@@ -255,8 +255,8 @@
             <origin-type>Mountain</origin-type>
         </wild-flower>
 
-        <wild-flower name="i897656">
-            <name>Melilotus</name>
+        <wild-flower flower-id="i897656" flower-info="синий цветок">
+            <flower-name>Melilotus</flower-name>
             <soil>Peaty</soil>
             <origin>Europe</origin>
             <visual-parameters>
@@ -273,8 +273,8 @@
             <origin-type>Forest</origin-type>
         </wild-flower>
 
-        <wild-flower name="i137388">
-            <name>Digitalis purpurea</name>
+        <wild-flower flower-id="i137388" flower-info="сиреневый цветок">
+            <flower-name>Digitalis purpurea</flower-name>
             <soil>Loamy</soil>
             <origin>North America</origin>
             <visual-parameters>
