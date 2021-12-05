@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.company.com/flowers"
+        xmlns:gh="http://www.company.com/flowers"
+        elementFormDefault="qualified">
+
+    <element name="flower" type="gh:Flower" abstract="true"/>
+    <element name="aquatic-flower" type="gh:AquaticFlower" substitutionGroup="gh:flower"/>
+    <element name="wild-flower" type="gh:WildFlower" substitutionGroup="gh:flower"/>
+    <element name="garden-flower" type="gh:GardenFlower" substitutionGroup="gh:flower"/>
+    <element name="flowers">
+        <complexType>
+            <sequence>
+                <element ref="gh:flower"
+                         minOccurs="1"
+                         maxOccurs="unbounded"/>
+            </sequence>
+        </complexType>
+    </element>
+
+    <complexType name="Flower">
+        <sequence>
+            <element name="flower-name" type="string"/>
+            <element name="soil" type="gh:SoilType"/>
+            <element name="origin" type="string"/>
+            <element name="visual-parameters" type="gh:VisualParameters"/>
+            <element name="growing-tips" type="gh:GrowingTips"/>
+            <element name="multiplying" type="gh:Multiplying"/>
+            <element name="planting-date" type="gYear"/>
+        </sequence>
+        <attribute name="flower-id" use="required" type="gh:IndexID"/>
+        <attribute name="flower-info" use="optional" type="string"/>
+    </complexType>
+
+    <complexType name="AquaticFlower">
+        <complexContent>
+            <extension base="gh:Flower">
+                <sequence>
+                    <element name="water-type">
+                        <simpleType>
+                            <restriction base="string">
+                                <enumeration value="River"/>
+                                <enumeration value="Lake"/>
+                            </restriction>
+                        </simpleType>
+                    </element>
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+
+    <complexType name="WildFlower">
+        <complexContent>
+            <restriction base="gh:Flower">
+                <sequence>
+                    <element name="origin-type">
+                        <simpleType>
+                            <restriction base="string">
+                                <enumeration value="Forest"/>
+                                <enumeration value="Field"/>
+                                <enumeration value="Mountain"/>
+                            </restriction>
+                        </simpleType>
+                    </element>
+                </sequence>
+            </restriction>
+        </complexContent>
+    </complexType>
+
+    <complexType name="GardenFlower">
+        <complexContent>
+            <restriction base="gh:Flower">
+                <sequence>
+                    <element name="flower-age">
+                        <simpleType>
+                            <restriction base="string">
+                                <enumeration value="Perennial"/>
+                                <enumeration value="Annual"/>
+                            </restriction>
+                        </simpleType>
+                    </element>
+                </sequence>
+            </restriction>
+        </complexContent>
+    </complexType>
+
+    <complexType name="VisualParameters">
+        <sequence>
+            <element name="leaves-form" type="string"/>
+            <element name="root" type="string"/>
+            <element name="average-height" type="positiveInteger"/>
+        </sequence>
+    </complexType>
+
+    <complexType name="GrowingTips">
+        <sequence>
+            <element name="temperature" type="positiveInteger"/>
+            <element name="light" type="string"/>
+        </sequence>
+    </complexType>
+
+    <simpleType name="IndexID">
+        <restriction base="ID">
+            <pattern value="i\d{6}"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="SoilType">
+        <restriction base="string">
+            <enumeration value="Peaty"/>
+            <enumeration value="Sandy"/>
+            <enumeration value="Loamy"/>
+            <enumeration value="Water"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="Multiplying">
+        <restriction base="string">
+            <enumeration value="Cuttings"/>
+            <enumeration value="Seeds"/>
+            <enumeration value="Leaves"/>
+        </restriction>
+    </simpleType>
+</schema>

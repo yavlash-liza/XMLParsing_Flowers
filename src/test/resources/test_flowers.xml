@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns:ns ="http://www.company.com/flowers"
+         xsi:schemaLocation = "http://www.company.com/flowers flowers.xsd">
+    <flowers>
+        <garden-flower flower-id="i902542" flower-info="розовый цветок">
+            <flower-name>Azalea</flower-name>
+            <soil>Peaty</soil>
+            <origin>South Asia</origin>
+            <visual-parameters>
+                <leaves-form>Lobed</leaves-form>
+                <root>Fibrous</root>
+                <average-height>20</average-height>
+            </visual-parameters>
+            <growing-tips>
+                <temperature>12</temperature>
+                <light>Shadow</light>
+            </growing-tips>
+            <multiplying>Cuttings</multiplying>
+            <planting-date>2016-01-15</planting-date>
+            <flower-age>Annual</flower-age>
+        </garden-flower>
+
+        <aquatic-flower flower-id="i456789" flower-info="розовый цветок">
+            <flower-name>Lotus</flower-name>
+            <soil>Water</soil>
+            <origin>South Asia</origin>
+            <visual-parameters>
+                <leaves-form>Entire</leaves-form>
+                <root>Fibrous</root>
+                <average-height>30</average-height>
+            </visual-parameters>
+            <growing-tips>
+                <temperature>10</temperature>
+                <light>Sun</light>
+            </growing-tips>
+            <multiplying>Seeds</multiplying>
+            <planting-date>2020-01-01</planting-date>
+            <water-type>River</water-type>
+        </aquatic-flower>
+
+        <wild-flower flower-id="i094756" flower-info="оранжевый цветок">
+            <flower-name>Achillea millefolium</flower-name>
+            <soil>Sandy</soil>
+            <origin>Europe</origin>
+            <visual-parameters>
+                <leaves-form>Toothed</leaves-form>
+                <root>Fibrous</root>
+                <average-height>15</average-height>
+            </visual-parameters>
+            <growing-tips>
+                <temperature>10</temperature>
+                <light>Sun</light>
+            </growing-tips>
+            <multiplying>Cuttings</multiplying>
+            <planting-date>2018-09-15</planting-date>
+            <origin-type>Field</origin-type>
+        </wild-flower>
+    </flowers>
+</project>
