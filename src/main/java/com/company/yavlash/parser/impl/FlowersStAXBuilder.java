@@ -59,7 +59,7 @@ public class FlowersStAXBuilder extends AbstractFlowersBuilder {
         } catch (IOException e) {
             throw new XmlFlowerException(format("Impossible close file %s ", fileName), e);
         }
-        logger.log(Level.INFO, "Plants were created successfully");
+        logger.log(Level.INFO, "Flowers were created successfully");
     }
 
     private Flower buildFlower(XMLStreamReader reader) throws XMLStreamException, XmlFlowerException {
@@ -69,7 +69,7 @@ public class FlowersStAXBuilder extends AbstractFlowersBuilder {
             case AQUATIC_FLOWER -> new AquaticFlower();
             case GARDEN_FLOWER -> new GardenFlower();
             case WILD_FLOWER -> new WildFlower();
-            default -> throw new XmlFlowerException("Invalid plant type");
+            default -> throw new XmlFlowerException("Invalid flower type");
         };
         String id = reader.getAttributeValue(null, FlowerEnumTag.FLOWER_ID.toString());
         flower.setFlowerId(id);
